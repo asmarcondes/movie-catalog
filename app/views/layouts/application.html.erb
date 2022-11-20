@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MovieCatalog</title>
+    <title>CESARFlix</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,28 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <h2>CESARFlix</h2>
+
+      <nav>
+        <a href="/movies">Filmes</a> | 
+        <a href="/actors">Atrizes & Atores</a> | 
+        <a href="/reviews">Comentários</a>
+      </nav>
+    </header>   
+
+    <hr>
+    
+    <main>
+      <%= yield %>
+    </main>
+
+    <br />
+    <hr>
+
+    <footer>
+      <p>Projeto Inova.Ação Afro CESAR</p>
+      <p>Desenvolvido por Klécia, Paulo e Anderson</p>
+    </footer>
   </body>
 </html>
