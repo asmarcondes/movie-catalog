@@ -11,15 +11,7 @@
   </head>
 
   <body>
-    <header>
-      <h2>CESARFlix</h2>
-
-      <nav>
-        <a href="/movies">Filmes</a> | 
-        <a href="/actors">Atrizes & Atores</a> | 
-        <a href="/reviews">Comentários</a>
-      </nav>
-    </header>   
+    <%= render "layouts/header" %>   
 
     <hr>
     
@@ -30,9 +22,6 @@
     <br />
     <hr>
 
-    <footer>
-      <p>Projeto Inova.Ação Afro CESAR</p>
-      <p>Desenvolvido por Klécia, Paulo e Anderson</p>
-    </footer>
+    <%= render "layouts/footer" %>
   </body>
 </html>
