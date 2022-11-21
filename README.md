@@ -33,9 +33,9 @@ usuários;
 - [x] Ator pode estar em vários filmes
 
 #### Comentário (Crítica)
-- [ ] Apenas comentários não aprovados serão exibidos na lista de comentários
-- [ ] Campo de texto [ obrigatório ]
-- [ ] Filme associado [ obrigatório ]
+- [x] Apenas comentários não aprovados serão exibidos na lista de comentários
+- [x] Campo de texto [ obrigatório ]
+- [x] Filme associado [ obrigatório ]
 - [ ] Deve ser criado como rascunho até que seja revisado e aprovado
 - [ ] Para cada comentário aprovado, deve-se gerar um log (registro em tabela)
 
