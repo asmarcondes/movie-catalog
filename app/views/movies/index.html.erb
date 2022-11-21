@@ -4,7 +4,7 @@
 
 <div id="movies">
   <% @movies.each do |movie| %>
-    <%= render movie, show_cast: false %>
+    <%= render movie, show_details: false %>
     <p>
       <%= link_to "Show this movie", movie %>
     </p>

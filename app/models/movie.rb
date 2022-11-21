@@ -7,5 +7,5 @@ class Movie < ApplicationRecord
   }
 
   has_and_belongs_to_many :actors
-  has_many :review, dependent: :destroy
+  has_many :reviews, dependent: :destroy
 end

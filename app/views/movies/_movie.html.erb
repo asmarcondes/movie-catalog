@@ -9,7 +9,7 @@
     <%= movie.launch_year %>
   </p>
   
-  <% if show_cast %>
+  <% if show_details %>
   <p>
     <strong>Cast:</strong>
     <ul>
@@ -19,6 +19,19 @@
         </li>
       <% end %>
     </ul>
+  </p>
+  <% end %>
+
+  <% if show_details %>
+  <p>
+    <strong>Reviews:</strong>
+    
+      <% movie.reviews.each do |review| %>
+      <p>
+        <span>Rate: <%= review.rating %></span><br>
+        Comment: <q><%= review.comment %></q>        
+    </p>
+      <% end %>
   </p>
   <% end %>
 
