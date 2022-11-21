@@ -56,6 +56,21 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def approve
+    review = Review.find(params[:id])
+    review.approved = true
+
+    respond_to do |format|
+      if review.save
+        format.html { redirect_to reviews_url, notice: 'Review was successfully approved.' }
+        format.json { head :no_content }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: review.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
@@ -69,6 +84,6 @@ class ReviewsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def review_params
-    params.require(:review).permit(:comment, :rating, :movie_id)
+    params.require(:review).permit(:comment, :rating, :approved, :movie_id)
   end
 end

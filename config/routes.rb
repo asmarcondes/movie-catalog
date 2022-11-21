@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :movies
-  resources :reviews
   resources :actors
+  resources :reviews do
+    member do
+      patch :approve
+    end
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
