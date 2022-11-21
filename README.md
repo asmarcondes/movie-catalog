@@ -21,9 +21,9 @@ usuários;
 - [x] Título [ obrigatório, único ]
 - [x] Ano de lançamento [ obrigatório, válido ]
 - [x] Elenco de atores [ obrigatório ]
-- [ ] Comentários (críticas)
-- [ ] Devem ser listados no detalhe do filme apenas os comentários aprovados (show)
-- [ ] Rating (nota) [ opcional da equipe ]
+- [x] Comentários (críticas)
+- [x] Devem ser listados no detalhe do filme apenas os comentários aprovados (show)
+- [x] Rating (nota) [ opcional da equipe ]
 
 #### Ator
 - [x] Ao deletar um ator, remover a referência ao elenco do filme caso exista
@@ -36,10 +36,10 @@ usuários;
 - [x] Apenas comentários não aprovados serão exibidos na lista de comentários
 - [x] Campo de texto [ obrigatório ]
 - [x] Filme associado [ obrigatório ]
-- [ ] Deve ser criado como rascunho até que seja revisado e aprovado
-- [ ] Para cada comentário aprovado, deve-se gerar um log (registro em tabela)
+- [x] Deve ser criado como rascunho até que seja revisado e aprovado
+- [x] Para cada comentário aprovado, deve-se gerar um log (registro em tabela)
 
 #### Log (registrar as aprovações de comentários)
-- [ ] Será usada apenas para listar (:index) os logs de aprovação de comentários
-- [ ] ID do comentário [ obrigatório ]
-- [ ] Data de aprovação [ obrigatório ]
+- [x] Será usada apenas para listar (:index) os logs de aprovação de comentários
+- [x] ID do comentário [ obrigatório ]
+- [x] Data de aprovação [ obrigatório ]
