@@ -11,26 +11,26 @@ Simulação de catálogo de filmes em Ruby on Rails para o projeto Inova.Ação 
 ---
 ## Requisitos
 ### Gerais
-- [ ] Não necessita de Login nem mesmo sessão de
+- [x] Não necessita de Login nem mesmo sessão de
 usuários;
-- [ ] Não é necessário estilização (css/js) das páginas;
-- [ ] O sistema precisa apresentar um menu básico para que usuários consigam navegar entre as páginas através de seus respectivos links;
-- [ ] A página inicial deve listar todos os filmes cadastrados no sistema;
+- [x] Não é necessário estilização (css/js) das páginas;
+- [x] O sistema precisa apresentar um menu básico para que usuários consigam navegar entre as páginas através de seus respectivos links;
+- [x] A página inicial deve listar todos os filmes cadastrados no sistema;
 ### Entidades
 #### Filme
-- [ ] Título [ obrigatório, único ]
-- [ ] Ano de lançamento [ obrigatório, válido ]
-- [ ] Elenco de atores [ obrigatório ]
+- [x] Título [ obrigatório, único ]
+- [x] Ano de lançamento [ obrigatório, válido ]
+- [x] Elenco de atores [ obrigatório ]
 - [ ] Comentários (críticas)
 - [ ] Devem ser listados no detalhe do filme apenas os comentários aprovados (show)
 - [ ] Rating (nota) [ opcional da equipe ]
 
 #### Ator
-- [ ] Ao deletar um ator, remover a referência ao elenco do filme caso exista
-- [ ] Nome [ obrigatório ]
-- [ ] Ano de nascimento [ obrigatório ]
-- [ ] Email [ obrigatório, único ]
-- [ ] Ator pode estar em vários filmes
+- [x] Ao deletar um ator, remover a referência ao elenco do filme caso exista
+- [x] Nome [ obrigatório ]
+- [x] Ano de nascimento [ obrigatório ]
+- [x] Email [ obrigatório, único ]
+- [x] Ator pode estar em vários filmes
 
 #### Comentário (Crítica)
 - [ ] Apenas comentários não aprovados serão exibidos na lista de comentários
