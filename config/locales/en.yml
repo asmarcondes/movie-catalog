@@ -30,4 +30,31 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  error: "error"
+  
+  actors: "Actors"
+  cast: "Cast"
+  
+  movie: "Movie"
+  movies: "Movies"
+  title: "Title"
+  release_year: "Release Year"
+  show_movie: "Show this movie"
+  new_movie: "New movie"
+  edit_movie: "Edit this movie"
+  back_to_movies: "Back to movies"
+  
+  logs: "Logs"
+  approval_at: "Approval date"
+
+  review: "Review"  
+  reviews: "Reviews"
+  approve_review: "Approve this review"
+  edit_review: "Edit this review"
+  destroy_review: "Destroy this review"
+  back_to_reviews: "Back to reviews"
+  comment: "Comment"
+  rate: "Rate"
+  editing_review: "Editing review"
+  show_review: "Show this review"
+  new_review: "New review"

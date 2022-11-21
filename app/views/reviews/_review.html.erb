@@ -1,16 +1,16 @@
 <div id="<%= dom_id review %>">
   <p>
-    <strong>Comment:</strong>
+    <strong><%= t(:comment) %>:</strong>
     <%= review.comment %>
   </p>
 
   <p>
-    <strong>Rating:</strong>
+    <strong><%= t(:rate) %>:</strong>
     <%= review.rating %>
   </p>
 
   <p>
-    <strong>Movie:</strong>
+    <strong><%= t(:movie) %>:</strong>
     <%= review.movie.title %>
   </p>
 </div>

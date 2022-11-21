@@ -1,12 +1,12 @@
 <div id="<%= dom_id log %>">
   <dl>
     <dt>
-      <strong>Review:</strong>
+      <strong><%= t(:review) %>:</strong>
       <span><%= log.review_id %></span>
     </dt>
   
     <dd>
-      <strong>Approval date:</strong>
+      <strong><%= t(:approval_at) %>:</strong>
       <span><%= log.created_at %></span>        
     </dd>
   </dl>

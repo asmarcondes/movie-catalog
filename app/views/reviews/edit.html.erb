@@ -1,10 +1,10 @@
-<h1>Editing review</h1>
+<h1><%= t(:editing_review) %></h1>
 
 <%= render "form", review: @review %>
 
 <br>
 
 <div>
-  <%= link_to "Show this review", @review %> |
-  <%= link_to "Back to reviews", reviews_path %>
+  <%= link_to t(:show_review), @review %> |
+  <%= link_to t(:back_to_reviews), reviews_path %>
 </div>

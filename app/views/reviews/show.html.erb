@@ -4,12 +4,12 @@
 
 <div>
   <p>
-    <%= button_to "Approve this review", :approve_review, params: {id:@review.id}, method: :patch %>
+    <%= button_to t(:approve_review), :approve_review, params: {id:@review.id}, method: :patch %>
   </p>
 
-  <%= link_to "Edit this review", edit_review_path(@review) %> |  
-  <%= link_to "Back to reviews", reviews_path %> |
+  <%= link_to t(:edit_review), edit_review_path(@review) %> |  
+  <%= link_to t(:back_to_reviews), reviews_path %> |
      
   <br>
-  <%= button_to "Destroy this review", @review, method: :delete %>
+  <%= button_to t(:destroy_review), @review, method: :delete %>
 </div>
