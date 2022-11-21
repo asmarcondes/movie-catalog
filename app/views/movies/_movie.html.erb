@@ -8,5 +8,18 @@
     <strong>Launch year:</strong>
     <%= movie.launch_year %>
   </p>
+  
+  <% if show_cast %>
+  <p>
+    <strong>Cast:</strong>
+    <ul>
+      <% movie.actors.each do |actor| %>
+        <li>
+          <%= actor.name %>
+        </li>
+      <% end %>
+    </ul>
+  </p>
+  <% end %>
 
 </div>
