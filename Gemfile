@@ -63,6 +63,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   # gem 'htmlbeautifier'
+  gem 'rspec-rails', '~> 6.0.0'
   gem 'rubocop'
   gem 'solargraph'
 end
@@ -70,6 +71,7 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rspec-rails', '~> 6.0.0'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
