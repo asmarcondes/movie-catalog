@@ -53,3 +53,4 @@ RSpec.describe Actor, type: :model do
 
     expect(actor).to_not be_valid
   end
+end  
