@@ -27,7 +27,7 @@ RSpec.describe Actor, type: :model do
   end
 
   it 'não é válido com ano de nascimento inválido' do
-    actor = Actor.new(birth_year: 1910)
+    actor = Actor.new(birth_year: 1600)
     actor.name = 'Megan Fox'
     actor.email = 'megan@fox.com'
 
@@ -51,6 +51,6 @@ RSpec.describe Actor, type: :model do
     actor2.email = 'megan@fox.com'
     actor2.save
 
-    expect(actor).to_not be_valid
+    expect(actor2).to_not be_valid
   end
-end  
+end
