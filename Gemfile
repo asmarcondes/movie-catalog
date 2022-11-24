@@ -65,6 +65,7 @@ group :development do
   # gem 'htmlbeautifier'
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rubocop'
+  gem 'rubycritic', require: false
   gem 'solargraph'
 end
 
