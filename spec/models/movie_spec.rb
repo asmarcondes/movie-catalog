@@ -28,10 +28,10 @@ RSpec.describe Movie, type: :model do
 
     context 'com título duplicado' do
       it 'não é válido' do
-        subject.save
+        movie.save
 
         movie2 = Movie.new
-        movie2.title = subject.title
+        movie2.title = movie.title
         movie2.launch_year = 1980
         movie2.actors << Actor.new(name: 'Ator 1', email: 'ator1@teste.com', birth_year: 1980)
         movie2.save
