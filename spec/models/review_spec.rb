@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Review, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'é válido com texto e filme associado'
+  it 'não é válido sem texto'
+  it 'não é válido sem filme associado'
+  it 'deve ser registrado sem estar aprovado'
 end

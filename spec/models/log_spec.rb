@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Log, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'é válido com ID do comentário e data de aprovação'
+  it 'não é válido sem ID do comentário'
+  it 'não é válido sem data de aprovação'
 end
