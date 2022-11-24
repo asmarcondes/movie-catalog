@@ -42,4 +42,21 @@ RSpec.describe Review, type: :model do
 
     expect(review).to be_valid
   end
+
+  it 'deve registrar um log ao aprovar comentário' do
+    review = Review.new(approved: false)
+    review.rating = 0
+    review.comment = 'Primeiro comentario'
+
+    movie = Movie.new(title: 'Movie 1', launch_year: 1980,
+                      actors: [Actor.new(name: 'Ator 1', email: 'ator1@teste.com', birth_year: 1980)])
+    review.movie = movie
+    review.save
+
+    review.update({ approved: true })
+
+    log = Log.find_by(review_id: review.id)
+
+    expect(log).to_not be_nil
+  end
 end
