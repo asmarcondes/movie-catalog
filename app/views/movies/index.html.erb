@@ -1,7 +1,5 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Movies</h1>
-
 <div id="movies">
   <% @movies.each do |movie| %>
     <%= render movie, show_details: false %>

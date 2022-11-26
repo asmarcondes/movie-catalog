@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full bg-gray-100">
   <head>
     <title>CESARFlix</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,18 +11,18 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= render "layouts/header" %>   
+  <body class="h-full">
+    <div class="min-h-full">
+      <%= render "layouts/nav" %>   
+      <%= render "layouts/header" %>
 
-    <hr>
-    
-    <main>
-      <%= yield %>
-    </main>
+      <main>
+        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">          
+          <%= yield %>                  
+        </div>
+      </main>
 
-    <br />
-    <hr>
-
-    <%= render "layouts/footer" %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>
