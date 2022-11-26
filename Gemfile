@@ -63,6 +63,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   # gem 'htmlbeautifier'
+  gem 'rails_live_reload'
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rubocop'
   gem 'rubycritic', require: false
@@ -78,4 +79,4 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "tailwindcss-rails", "~> 2.0"
+gem 'tailwindcss-rails', '~> 2.0'
