@@ -4,9 +4,9 @@
   <% @reviews.each do |review| %>
     <%= render review %>
     <p>
-      <%= link_to t(:show_review), review %>
+      <%= link_to t(:show_review), review, class: 'relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500' %>
     </p>
   <% end %>
 </div>
 
-<%= link_to t(:new_review), new_review_path %>
+<%= link_to t(:new_review), new_review_path, class: 'relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500' %>

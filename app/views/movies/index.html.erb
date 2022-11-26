@@ -4,9 +4,9 @@
   <% @movies.each do |movie| %>
     <%= render movie, show_details: false %>
     <p>
-      <%= link_to "Show this movie", movie %>
+      <%= link_to "Show this movie", movie, class: 'relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500' %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New movie", new_movie_path %>
+<%= link_to "New movie", new_movie_path, class: 'relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500' %>

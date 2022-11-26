@@ -4,9 +4,9 @@
   <% @actors.each do |actor| %>
     <%= render actor %>
     <p>
-      <%= link_to "Show this actor", actor %>
+      <%= link_to "Show this actor", actor, class: 'relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500' %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New actor", new_actor_path %>
+<%= link_to "New actor", new_actor_path, class: 'relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500' %>
