@@ -1,31 +1,19 @@
 <%= form_with(model: movie) do |form| %>
   <% if movie.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
-
-      <ul>
-        <% movie.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
+    <%= render 'layouts/error', entity: movie.class, errors: movie.errors%>
   <% end %>
-
   <div>
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
-
   <div>
     <%= form.label :launch_year, style: "display: block" %>
     <%= form.number_field :launch_year %>
   </div>
-
   <div>
     <%= form.label :cast, style: "display: block" %>
     <%= form.collection_check_boxes :actor_ids, @all_actors, :id, :name %>
   </div>
-
   <div>
     <%= form.submit %>
   </div>
