@@ -1,8 +1,8 @@
-
 <p style="color: green"><%= notice %></p>
-
 <div id="logs">
-  <% @logs.each do |log| %>
-    <%= render log %>
-  <% end %>
+  <ol class="border-l border-gray-300">
+    <% @logs.each do |log| %>
+      <%= render log %>
+    <% end %>
+  </ol>
 </div>

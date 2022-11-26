@@ -1,13 +1,11 @@
-<div id="<%= dom_id log %>">
-  <dl>
-    <dt>
-      <strong><%= t(:review) %>:</strong>
-      <span><%= log.review_id %></span>
-    </dt>
-  
-    <dd>
-      <strong><%= t(:approval_at) %>:</strong>
-      <span><%= log.created_at %></span>        
-    </dd>
-  </dl>
-</div>
+<li>
+  <div class="flex flex-start items-center pt-3">
+    <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+    <p class="text-gray-500 text-sm"><%= log.created_at %></p>
+  </div>
+  <div class="mt-0.5 ml-4 mb-6">
+    <h4 class="text-gray-800 font-semibold text-xl mb-1.5"><%= t(:review) %> #<%= log.review_id %></h4>
+    <%# TODO: exibir o texto do comentário aprovado %>
+    <!--<p class="text-gray-500 mb-3"><%#= log.review_text %></p>-->
+  </div>
+</li>
